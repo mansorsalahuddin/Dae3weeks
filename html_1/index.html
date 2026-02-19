@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Safety Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Website Safety Scanner</h1>
+</header>
+
+<main>
+
+    <input type="text" id="urlInput" placeholder="Enter website URL">
+    <button onclick="startScan()">Scan Website</button>
+
+    <div class="scanner-box">
+
+        <div id="status">Idle</div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <div class="meter">
+            <div id="meter-fill"></div>
+        </div>
+
+        <div id="risk-score"></div>
+
+        <div id="warnings"></div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>Security Analysis Tool</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
