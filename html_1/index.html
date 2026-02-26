@@ -2,46 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Website Safety Scanner</title>
+    <title>Quran Recitation Trainer</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Website Safety Scanner</h1>
-</header>
+    <header>
+        <h1>Quran Recitation Trainer</h1>
+    </header>
 
-<main>
-
-    <input type="text" id="urlInput" placeholder="Enter website URL">
-    <button onclick="startScan()">Scan Website</button>
-
-    <div class="scanner-box">
-
-        <div id="status">Idle</div>
-
-        <div class="progress-container">
-            <div id="progress-bar"></div>
+    <main>
+        <div class="ayah-box">
+            <h2>Current Ayah</h2>
+            <p id="ayahText">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </p>
         </div>
 
-        <div class="meter">
-            <div id="meter-fill"></div>
+        <div class="controls">
+            <button id="recordBtn">🎤 Record</button>
+            <button id="stopBtn" disabled>⏹ Stop</button>
         </div>
 
-        <div id="risk-score"></div>
+        <div class="status">
+            <p id="feedback">Waiting...</p>
+        </div>
 
-        <div id="warnings"></div>
+        <canvas id="visualizer"></canvas>
+    </main>
 
-    </div>
-
-</main>
-
-<footer>
-    <p>Security Analysis Tool</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
